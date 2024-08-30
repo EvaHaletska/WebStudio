@@ -89,7 +89,7 @@ body {
 }
 
 .main-hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40)), url(../images/people-background.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40)), url(./images/people-background.jpg);
     padding-top: 200px;
     padding-bottom: 200px;
     background-repeat: no-repeat;
@@ -164,19 +164,19 @@ body {
 }
 
 .decision-item:nth-child(1)::before {
-    background-image: url(../images/antenna.png);
+    background-image: url(./images/antenna.png);
 }
 
 .decision-item:nth-child(2)::before {
-    background-image: url(../images/watch.png);
+    background-image: url(./images/watch.png);
 }
 
 .decision-item:nth-child(3)::before {
-    background-image: url(../images/diagram.png);
+    background-image: url(./images/diagram.png);
 }
 
 .decision-item:nth-child(4)::before {
-    background-image: url(../images/astronaut.png);
+    background-image: url(./images/astronaut.png);
 }
 
 .decision-text {
