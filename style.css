@@ -1,0 +1,413 @@
+:root {
+    --logo-color: #000;
+    --accent-color: #2196F3;
+    --title-color: #212121;
+    --added-text: #757575;
+    --main-background: #FFF;
+    --team-background: #F5F4FA;
+    --footer-background: #2F303A;
+    --footer-number: rgba(255, 255, 255, 0.60);
+    --border-header: #ECECEC;
+}
+body {
+    font-family: Roboto;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    outline: 1px solid red;
+}
+
+.header {
+    background-color: var(--main-background);
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
+
+.header-box {
+    display: flex;
+    align-items: center;
+}
+
+.header-logo {
+    color: var(--logo-color);
+    font-family: Raleway;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.38;
+    letter-spacing: 0.78px;
+    display: flex;
+    justify-content: flex-start;
+    margin-right: 93px;
+}
+
+.nav-list {
+    display: flex;
+    gap: 50px;
+    margin-right: 344px;
+}
+
+.header-list {
+    display: flex;
+    gap: 50px;
+    justify-content: flex-end;
+}
+
+.logo-color {
+    color: var(--accent-color);
+    font-family: Raleway;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.38;
+    letter-spacing: 0.78px;
+}
+.nav-link {
+    color: var(--title-color);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.28px;
+}
+
+.active {
+    color: var(--accent-color);
+}
+.nav-link:hover, .nav-link:focus {
+    color: var(--accent-color);
+}
+.header-link {
+    color: var(--added-text);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.28px;
+}
+.header-link:hover, .header-link:focus {
+    color: var(--accent-color);
+}
+
+.main-hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40)), url(../images/people-background.jpg);
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover ;
+}
+
+.main-hero > .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.hero-title {
+    color: var(--main-background);
+    text-align: center;
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 1.36; 
+    letter-spacing: 2.64px;
+    text-transform: uppercase;
+    width: 696px;
+}
+
+
+.hero-btn {
+    background-color: var(--accent-color);
+    color: var(--main-background);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.875; /* 187.5% */
+    letter-spacing: 0.96px;
+    padding: 10px 32px;
+    border: transparent;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.decision {
+    background-color: var(--main-background);
+    padding-top: 94px;
+}
+
+.decision-list {
+    display: flex;
+    gap: 30px;
+}
+
+.decision-title {
+    color: var(--title-color);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.14;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+}
+
+.decision-item::before {
+    content: "";
+    width: 270px;
+    height: 120px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    background: #F5F4FA;
+    display: block;
+    margin-bottom: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70px;
+}
+
+.decision-item:nth-child(1)::before {
+    background-image: url(../images/antenna.png);
+}
+
+.decision-item:nth-child(2)::before {
+    background-image: url(../images/watch.png);
+}
+
+.decision-item:nth-child(3)::before {
+    background-image: url(../images/diagram.png);
+}
+
+.decision-item:nth-child(4)::before {
+    background-image: url(../images/astronaut.png);
+}
+
+.decision-text {
+    color: var(--added-text);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.71; /* 171.429% */
+    letter-spacing: 0.42px;
+    width: 270px;
+    margin-top: 10px;
+}
+
+.services {
+    background-color: var(--main-background);
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.services-title {
+    color: var(--title-color);
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.16;
+    letter-spacing: 1.08px;
+}
+
+.services-list {
+    display: flex;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.services-item {
+    flex-basis: calc((100% - 60px) /3);
+}
+
+.services-img {
+    width: 100%;
+}
+
+.main-team {
+    background-color: var(--team-background);
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.team-title {
+    color: var(--title-color);
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.16;
+    letter-spacing: 1.08px;
+}
+
+.team-list {
+    display: flex;
+    gap: 30px;
+    margin-top: 50px;
+    justify-content: center;
+}
+
+.team-item {
+    flex-basis: calc((100% - 60px) /4);
+   border-radius: 0px 0px 4px 4px;
+   background-color: var(--main-background);
+   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.20);
+}
+
+.team-img {
+    width: 100%;
+}
+
+.teamt {
+    padding: 30px
+}
+
+.team-name {
+    color: var(--title-color);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.18;
+    letter-spacing: 0.48px;
+    margin-bottom: 10px;
+}
+
+.team-text {
+    color: var(--added-text);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.18;
+    letter-spacing: 0.48px;
+}
+
+.footer {
+    background-color: var(--footer-background);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer-logo {
+    color: var(--main-background);
+    font-family: Raleway;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.38;
+    letter-spacing: 0.78px;
+}
+
+.footer-address {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.address-list{
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.footer-link {
+    color: var(--main-background);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.71; /* 171.429% */
+    letter-spacing: 0.42px;
+}
+
+.address-link {
+    color: var(--footer-number);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.71; /* 171.429% */
+    letter-spacing: 0.42px;
+}
+
+.portfolio-header {
+    background-color: var(--main-background);
+    padding-top: 24px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid var(--border-header);
+}
+
+.portfolio-main {
+    color: var(--main-background);
+}
+
+.main-portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.button-list{
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.button-btn {
+    background-color: var(--team-background);
+    color: var(--title-color);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.625; /* 162.5% */
+    letter-spacing: 0.48px;
+    border: white;
+    border-radius: 4px; 
+    padding: 6px 22px;
+}
+
+.all-btn {
+    padding: 6px 25px;
+}
+
+.button-btn:hover, .button-btn:focus {
+    background-color: var(--accent-color);
+    color: var(--main-background);
+    box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.12); }
+
+.card-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.card-item{
+    flex-basis: calc((100% - 60px) / 3);
+    border: 1px solid #EEE;
+    background: var(--main-background);
+}
+
+.card-item:hover, .card-item:focus {
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
+}
+
+.cardt{
+    padding: 20px 24px;
+}
+
+.card-img{
+    width: 100%;
+}
+
+.card-title {
+    color: var(--title-color);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 2; /* 200% */
+    letter-spacing: 1.08px;
+    margin-bottom: 4px;
+}
+
+.card-text {
+    color: var(--added-text);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.875; /* 187.5% */
+    letter-spacing: 0.48px;
+}
+
+.portfolio-footer {
+    background-color: var(--footer-background);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
